@@ -85,7 +85,7 @@ module Myob
             end
         end
 
-        class Miscellaneous < Base
+        class QuoteMiscellaneous < Base
             def model_route
               'Sale/Quote/Miscellaneous'
             end
