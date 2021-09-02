@@ -13,7 +13,7 @@ module Myob
             end
           end
           
-          class Item < Base
+          class InventoryItem < Base
             def model_route
               'Inventory/Item'
             end
