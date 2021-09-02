@@ -8,29 +8,23 @@ require 'myob/api/models/company_file'
 
 require 'myob/api/models/banking'
 
-require 'myob/api/company'
+require 'myob/api/models/company'
 
 require 'myob/api/models/current_user'
 
-require 'myob/api/contact'
+require 'myob/api/models/contact'
 
 require 'myob/api/models/general_ledger'
 
-require 'myob/api/inventory'
+require 'myob/api/models/inventory'
 
-require 'myob/api/payroll'
+require 'myob/api/models/payroll'
 
-require 'myob/api/purchase'
+require 'myob/api/models/purchase'
 
-require 'myob/api/report'
+require 'myob/api/models/report'
 
-require 'myob/api/sale'
-
-require 'myob/api/security'
-
-require 'myob/api/timebilling'
-
-require 'myob/api/bank_reconciliation_report'
+require 'myob/api/models/sale'
 
 require 'myob/api/models/timesheet'
 
