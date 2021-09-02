@@ -109,7 +109,7 @@ module Myob
             end
         end
                   
-        class Order < Base
+        class SaleOrder < Base
             def model_route
               'Sale/Order'
             end
