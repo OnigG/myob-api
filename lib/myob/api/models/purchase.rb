@@ -37,31 +37,31 @@ module Myob
             end
           end
 
-          class Order < Base
+          class PurchaseOrder < Base
             def model_route
               'Purchase/Order'
             end
           end
 
-          class OrderItem < Base
+          class PurchaseOrderItem < Base
             def model_route
               'Purchase/Order/Item'
             end
           end
 
-          class OrderMiscellaneous < Base
+          class PurchaseOrderMiscellaneous < Base
             def model_route
               'Purchase/Order/Miscellaneous'
             end
           end
 
-          class OrderProfessional < Base
+          class PurchaseOrderProfessional < Base
             def model_route
               'Purchase/Order/Professional'
             end
           end
 
-          class OrderService < Base
+          class PurchaseOrderService < Base
             def model_route
               'Purchase/Order/Service'
             end
