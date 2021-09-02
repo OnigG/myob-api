@@ -65,13 +65,8 @@ module Myob
             def model_route
               'Payroll/SuperannuationFund'
             end
-        end        
-                    
-        class Timesheet < Base
-            def model_route
-              'Payroll/Timesheet'
-            end
-        end
+        end                           
+
       end
     end
   end
