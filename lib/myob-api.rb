@@ -15,6 +15,7 @@ require 'myob/api/models/employee'
 require 'myob/api/models/employee_payment_details'
 require 'myob/api/models/employee_payroll_details'
 require 'myob/api/models/employee_standard_pay'
+require 'myob/api/models/supplier'
 
 require 'myob/api/models/employee_payroll_advice'
 
