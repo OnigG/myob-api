@@ -1,89 +1,101 @@
 module Myob
-  module Api
-    module Model
-      class GeneralLedger < Base
-        def model_route
-          'GeneralLedger'
+    module Api
+      module Model
+        class GeneralLedger < Base
+          def model_route
+            'GeneralLedger'
+          end
         end
-      end
-
-      class Account < Base
-        def model_route
-          'GeneralLedger/Account'
+  
+        class Account < Base
+          def model_route
+            'GeneralLedger/Account'
+          end
         end
-      end
-
-      class AccountBudget < Base
-        def model_route
-          'GeneralLedger/AccountBudget'
+  
+        class AccountBudget < Base
+          def model_route
+            'GeneralLedger/AccountBudget'
+          end
         end
-      end
-
-      class AccountingProperties < Base
-        def model_route
-          'GeneralLedger/AccountingProperties'
+  
+        class AccountingProperties < Base
+          def model_route
+            'GeneralLedger/AccountingProperties'
+          end
         end
-      end
-
-      class AccountRegister < Base
-        def model_route
-          'GeneralLedger/AccountRegister'
+  
+        class AccountRegister < Base
+          def model_route
+            'GeneralLedger/AccountRegister'
+          end
         end
-      end
-
-      class Category < Base
-        def model_route
-          'GeneralLedger/Category'
+  
+        class Category < Base
+          def model_route
+            'GeneralLedger/Category'
+          end
         end
-      end
-
-      class CategoryRegister < Base
-        def model_route
-          'GeneralLedger/CategoryRegister'
+  
+        class CategoryRegister < Base
+          def model_route
+            'GeneralLedger/CategoryRegister'
+          end
         end
-      end
 
-      class GeneralJournal < Base
-        def model_route
-          'GeneralLedger/GeneralJournal'
+        class Currency < Base
+            def model_route
+              'GeneralLedger/Currency'
+            end
         end
-      end
-
-      class Job < Base
-        def model_route
-          'GeneralLedger/Job'
+  
+        class GeneralJournal < Base
+          def model_route
+            'GeneralLedger/GeneralJournal'
+          end
         end
-      end
-
-      class JobBudget < Base
-        def model_route
-          'GeneralLedger/JobBudget'
+  
+        class Job < Base
+          def model_route
+            'GeneralLedger/Job'
+          end
         end
-      end
-
-      class JobRegister < Base
-        def model_route
-          'GeneralLedger/JobRegister'
+  
+        class JobBudget < Base
+          def model_route
+            'GeneralLedger/JobBudget'
+          end
         end
-      end
-
-      class JournalTransaction < Base
-        def model_route
-          'GeneralLedger/JournalTransaction'
+  
+        class JobRegister < Base
+          def model_route
+            'GeneralLedger/JobRegister'
+          end
         end
-      end
-
-      class LinkedAccount < Base
-        def model_route
-          'GeneralLedger/LinkedAccount'
+  
+        class JournalTransaction < Base
+          def model_route
+            'GeneralLedger/JournalTransaction'
+          end
         end
-      end
+  
+        class LinkedAccount < Base
+          def model_route
+            'GeneralLedger/LinkedAccount'
+          end
+        end
 
-      class TaxCode < Base
-        def model_route
-          'GeneralLedger/TaxCode'
+        class ProfitLossDistribution < Base
+            def model_route
+              'GeneralLedger/ProfitLossDistribution'
+            end
+          end
+  
+        class TaxCode < Base
+          def model_route
+            'GeneralLedger/TaxCode'
+          end
         end
       end
     end
-  end
-end
+  end  
