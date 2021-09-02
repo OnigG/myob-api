@@ -32,6 +32,8 @@ require 'myob/api/timebilling'
 
 require 'myob/api/bank_reconciliation_report'
 
+require 'myob/api/models/timesheet'
+
 require 'myob/api/client'
 
 # require 'myob/api/version'
