@@ -4,17 +4,19 @@
 
 ## Installation
 
+Fork this git to your own git, then get url from cloning button
+
 Add this line to your application's Gemfile:
 
-    gem 'myob-api'
+    gem 'myob-api' :git => 'https://github.com/..../.....'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Or install it yourself and update()if any change:
 
-    $ gem install myob-api
+    $ gem update myob-api
 
 ## Usage
 
@@ -46,6 +48,8 @@ The MYOB API uses 3 legged OAuth2. If you don't want to roll your own, or use th
     end
 
 ### API Client Setup
+
+Create an controller and add one of this to the controller (if you use MYOB_cloud, no need username and password)
 
 Create an api_client:
 
