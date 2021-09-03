@@ -25,13 +25,13 @@ module Myob
             end
         end
 
-        class CalculateDiscountsFees < Base
+        class CalculateDiscountsFee < Base
             def model_route
               'Sale/CustomerPayment/CalculateDiscountsFees'
             end
         end
 
-        class RecordWithDiscountsAndFees < Base
+        class RecordWithDiscountsAndFee < Base
             def model_route
               'Sale/CustomerPayment/RecordWithDiscountsAndFees'
             end
