@@ -7,9 +7,9 @@ module Myob
           end
           
           def select(AoD,YEA)
-            object = "AsOfDate="+ AoD.to_s 
-            object2 =  "YearEndAdjust=" + YEA.to_s
-            perform_request(self.url("?"+object+&+object2))
+            params = { 'AsOfDate' => AoD }
+            params = { 'YearEndAdjust' => YEA }
+            perform_request(self.url(params))
           end
           
         end
