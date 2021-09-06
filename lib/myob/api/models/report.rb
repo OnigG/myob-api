@@ -24,6 +24,12 @@ module Myob
             'Report/TaxCodeSummary'
           end
         end
+          
+        class BalanceSheetSummary < Base
+          def model_route
+            'Report/BalanceSheetSummary'
+          end
+        end
   
         class ReportProfitAndLossSummary < Base
           def model_route
