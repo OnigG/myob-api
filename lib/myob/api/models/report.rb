@@ -25,18 +25,6 @@ module Myob
           end
         end
           
-        class BalanceSheetSummary < Base
-          def model_route
-            'Report/BalanceSheetSummary'
-          end
-        end
-  
-        class ReportProfitAndLossSummary < Base
-          def model_route
-            'Report/ProfitAndLossSummary'
-          end
-        end
-  
         class ReportPayrollCategorySummary < Base
           def model_route
             'Report/PayrollCategorySummary'
