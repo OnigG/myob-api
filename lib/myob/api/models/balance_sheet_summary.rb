@@ -4,24 +4,19 @@ module Myob
         class BalanceSheetSummary < Base
           def model_route
             'Report/BalanceSheetSummary'
-          end
-       
-
-        # http://developer.myob.com/api/accountright/v2/payroll/timesheet/
-        # we always want to PUT timesheets, so they are never a "new" record
+          end      
+          
         def new_record?(object)
           false
         end
 
-        def for(user_id, start_date, end_date)
-          self.send(:perform_request, url({'Employee' => {'UID' => user_id}, 'StartDate' => start_date, 'EndDate' => end_date}))
+        def for(as_of_date, year_end_adjust)
+          self.send(:perform_request, url({ 'AsOfDate' => as_of_date, 'YearEndAdjust' => year_end_adjust}))
         end
 
-        # a timesheet is identified based on an employee UID as well as its start and end date
-        # it does not have a UID of its own
         def url(object = nil, params = nil)
           if object
-            "#{super()}/#{object['Employee']['UID']}?StartDate=#{object['StartDate']}&EndDate=#{object['EndDate']}"
+            "#{super()}/#{object?AsOfDate=#{object['AsOfDate']}&YearEndAdjust=#{object['YearEndAdjust']}"
           else
             super
           end
