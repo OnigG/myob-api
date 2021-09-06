@@ -121,19 +121,19 @@ module Myob
             end
         end
                       
-        class OrderMiscellaneous < Base
+        class SaleOrderMiscellaneous < Base
             def model_route
               'Sale/Order/Miscellaneous'
             end
         end        
                       
-        class OrderProfessional < Base
+        class SaleOrderProfessional < Base
             def model_route
               'Sale/Order/Professional'
             end
         end
 
-        class OrderService < Base
+        class SaleOrderService < Base
             def model_route
               'Sale/Order/Service'
             end
