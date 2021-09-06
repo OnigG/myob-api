@@ -30,6 +30,10 @@ require 'myob/api/models/timesheet'
 
 require 'myob/api/models/etc'
 
+require 'myob/api/models/balance_sheet_summary'
+
+require 'myob/api/models/profit_and_loss_summary'
+
 require 'myob/api/client'
 
 # require 'myob/api/version'
